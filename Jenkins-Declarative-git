@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('GIT SCM CHECKOUT') {
+            steps {
+               git 'https://github.com/hemanthsabarihs/myweb.git'
+            }
+        }
+    }
+}
