@@ -9,7 +9,7 @@ pipeline {
                git 'https://github.com/hemanthsabarihs/myweb.git'
             }
         }
-        stage('Maven Build') {
+        stage('MAVEN BUILD PACKAGE') {
             steps {
                sh "mvn clean package"
             }
